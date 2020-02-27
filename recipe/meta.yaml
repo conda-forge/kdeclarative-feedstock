@@ -1,5 +1,5 @@
 {% set name = "kdeclarative" %}
-{% set version = "5.66.0" %}
+{% set version = "5.67.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/kdeclarative-{{ version }}.tar.xz
-  sha256: ed3a334d8bce6d70e68e013d4210bd6e11cb2ebce9ede4c1813f44dada7eca73
+  sha256: ed713c0b05565d4626e53f030e0818449b35592382e76d705a4a6e19f53ba493
 
 build:
   number: 0
