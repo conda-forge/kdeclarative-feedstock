@@ -1,5 +1,5 @@
 {% set name = "kdeclarative" %}
-{% set version = "5.67.0" %}
+{% set version = "5.68.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/kdeclarative-{{ version }}.tar.xz
-  sha256: ed713c0b05565d4626e53f030e0818449b35592382e76d705a4a6e19f53ba493
+  sha256: 96a032bcb360e0ffcfe51d4d2f6153786682c2f967592bffcf15b9e6cd4cd3ae
 
 build:
   number: 0
@@ -52,7 +52,7 @@ about:
   license: LGPL-v2.1-or-later
   license_family: GPL
   license_file: COPYING.LIB
-  summary: 'Integration of QML and KDE work spaces'
+  summary: Integration of QML and KDE work spaces
   description: |
     KDeclarative provides integration of QML and KDE work spaces.
     It's comprises two parts: a library used by the C++ part of
