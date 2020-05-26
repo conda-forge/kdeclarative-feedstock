@@ -1,5 +1,5 @@
 {% set name = "kdeclarative" %}
-{% set version = "5.69.0" %}
+{% set version = "5.70.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/kdeclarative-{{ version }}.tar.xz
-  sha256: 916618a660f9ddc319019bf63576d7a67fdf62669ef178a87a95dbd311ff6f38
+  sha256: 8914c2266d7ea32f8028aee13ae5a7f39a3583f7ec74a74584577fb0f2bc09ef
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - make
-    - extra-cmake-modules
+    - extra-cmake-modules >={{ major_minor }}
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - {{ cdt('libselinux') }}  # [linux]
@@ -32,16 +32,16 @@ requirements:
     - xorg-libxfixes  # [linux]
     - xorg-libxext
     - qt
-    - kio
-    - ki18n
-    - kconfig
-    - kpackage
-    - kservice
-    - kiconthemes
-    - kcoreaddons
-    - kglobalaccel
-    - kwindowsystem
-    - kwidgetsaddons
+    - kio >={{ major_minor }}
+    - ki18n >={{ major_minor }}
+    - kconfig >={{ major_minor }}
+    - kpackage >={{ major_minor }}
+    - kservice >={{ major_minor }}
+    - kiconthemes >={{ major_minor }}
+    - kcoreaddons >={{ major_minor }}
+    - kglobalaccel >={{ major_minor }}
+    - kwindowsystem >={{ major_minor }}
+    - kwidgetsaddons >={{ major_minor }}
 
 test:
   commands:
