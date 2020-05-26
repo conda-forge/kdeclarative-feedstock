@@ -22,7 +22,7 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - make
-    - extra-cmake-modules
+    - extra-cmake-modules >={{ major_minor }}
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - {{ cdt('libselinux') }}  # [linux]
@@ -32,16 +32,16 @@ requirements:
     - xorg-libxfixes  # [linux]
     - xorg-libxext
     - qt
-    - kio
-    - ki18n
-    - kconfig
-    - kpackage
-    - kservice
-    - kiconthemes
-    - kcoreaddons
-    - kglobalaccel
-    - kwindowsystem
-    - kwidgetsaddons
+    - kio >={{ major_minor }}
+    - ki18n >={{ major_minor }}
+    - kconfig >={{ major_minor }}
+    - kpackage >={{ major_minor }}
+    - kservice >={{ major_minor }}
+    - kiconthemes >={{ major_minor }}
+    - kcoreaddons >={{ major_minor }}
+    - kglobalaccel >={{ major_minor }}
+    - kwindowsystem >={{ major_minor }}
+    - kwidgetsaddons >={{ major_minor }}
 
 test:
   commands:
