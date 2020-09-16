@@ -1,5 +1,5 @@
 {% set name = "kdeclarative" %}
-{% set version = "5.73.0" %}
+{% set version = "5.74.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/kdeclarative-{{ version }}.tar.xz
-  sha256: 713ae2ea41e1bac8f6d47cffa376d62c7805eb3e4cc41c3168c1f1b2ca70a598
+  sha256: 387c41626c145ddd1fc76d102b5ceaf37321cd02ca7395a10084cfd009bd0422
 
 build:
   number: 0
@@ -49,9 +49,21 @@ test:
 
 about:
   home: https://api.kde.org/frameworks/kdeclarative/html/index.html
-  license: LGPL-v2.1-or-later
-  license_family: GPL
-  license_file: COPYING.LIB
+  license: GPL-2.0-only AND GPL-2.0-or-later AND GPL-3.0-only AND LGPL-2.0-only AND LGPL-2.0-or-later AND LGPL-2.1-only AND LGPL-2.1-or-later AND LGPL-3.0-only AND LicenseRef-KDE-Accepted-GPL AND LicenseRef-KDE-Accepted-LGPL AND LicenseRef-Qt-Commercial AND MIT AND Qt-LGPL-exception-1.1
+  license_file:
+    - LICENSES/GPL-2.0-only.txt
+    - LICENSES/GPL-2.0-or-later.txt
+    - LICENSES/GPL-3.0-only.txt
+    - LICENSES/LGPL-2.0-only.txt
+    - LICENSES/LGPL-2.0-or-later.txt
+    - LICENSES/LGPL-2.1-only.txt
+    - LICENSES/LGPL-2.1-or-later.txt
+    - LICENSES/LGPL-3.0-only.txt
+    - LICENSES/LicenseRef-KDE-Accepted-GPL.txt
+    - LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
+    - LICENSES/LicenseRef-Qt-Commercial.txt
+    - LICENSES/MIT.txt
+    - LICENSES/Qt-LGPL-exception-1.1.txt
   summary: Integration of QML and KDE work spaces
   description: |
     KDeclarative provides integration of QML and KDE work spaces.
