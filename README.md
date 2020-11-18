@@ -3,11 +3,13 @@ About kdeclarative
 
 Home: https://api.kde.org/frameworks/kdeclarative/html/index.html
 
-Package license: LGPL-v2.1-or-later
+Package license: GPL-2.0-only AND GPL-2.0-or-later AND GPL-3.0-only AND LGPL-2.0-only AND LGPL-2.0-or-later AND LGPL-2.1-only AND LGPL-2.1-or-later AND LGPL-3.0-only AND LicenseRef-KDE-Accepted-GPL AND LicenseRef-KDE-Accepted-LGPL AND LicenseRef-Qt-Commercial AND MIT AND Qt-LGPL-exception-1.1
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kdeclarative-feedstock/blob/master/LICENSE.txt)
 
 Summary: Integration of QML and KDE work spaces
+
+Development: https://cgit.kde.org/kdeclarative.git/tree
 
 KDeclarative provides integration of QML and KDE work spaces.
 It's comprises two parts: a library used by the C++ part of
